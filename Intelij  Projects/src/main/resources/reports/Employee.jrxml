@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2023-12-01T19:56:21 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Employee" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e3cd9892-3550-45ae-b0d0-7e5d5b12283b">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<queryString>
+		<![CDATA[select*from employee]]>
+	</queryString>
+	<field name="Emp_ID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Emp_Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NIC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Sex" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Contact" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="JobRole" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="Emp_ID">
+		<groupExpression><![CDATA[$F{Emp_ID}]]></groupExpression>
+	</group>
+	<group name="Emp_Name">
+		<groupExpression><![CDATA[$F{Emp_Name}]]></groupExpression>
+	</group>
+	<group name="NIC">
+		<groupExpression><![CDATA[$F{NIC}]]></groupExpression>
+	</group>
+	<group name="Sex">
+		<groupExpression><![CDATA[$F{Sex}]]></groupExpression>
+	</group>
+	<group name="Contact">
+		<groupExpression><![CDATA[$F{Contact}]]></groupExpression>
+	</group>
+	<group name="JobRole">
+		<groupExpression><![CDATA[$F{JobRole}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="145" splitType="Stretch">
+			<staticText>
+				<reportElement x="160" y="90" width="190" height="30" uuid="36cddf34-7199-494c-95a6-11a566e8fbc5"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[EMPLOYEE REPORT]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="70" width="100" height="30" uuid="34af7a8e-4cad-4c2d-820f-fc0bf5574357"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="0" y="110" width="100" height="30" uuid="96264887-9585-4283-80e0-752955cc28c4"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-20" y="140" width="591" height="1" uuid="d7364599-2250-4603-9ccd-cb72d993265f">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="420" y="40" width="118" height="40" uuid="eb196412-0ca4-428b-94bc-5a69fb0b3d8f"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[DCC,Mihiripenna,Thalpe,Unawatuna]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="0" width="220" height="30" uuid="b308428a-75e3-4d4d-9e74-e5dcee18a633"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOG CARE CLINIC]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="58" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="100" height="30" uuid="5301a7c8-515b-46f1-9ba8-4aeac63aa699"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Emp_ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="154" y="10" width="100" height="30" uuid="05209ff7-2fa8-4d5d-bca1-dfa53193e585"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Emp_Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="10" width="100" height="30" uuid="42a2976c-5955-4dfd-a8aa-ac6b5dc695aa"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[NIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="10" width="100" height="30" uuid="9ea24fc6-3c62-4a27-a07b-d0222bb7cfd1"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Contact]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="103" splitType="Stretch">
+			<textField>
+				<reportElement x="1" y="20" width="100" height="30" uuid="ad463daf-4484-4a83-afd0-bc9839d93dcc"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Emp_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="20" width="100" height="30" uuid="cdcaadf3-437e-4661-9d74-1c97ada348dc"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Emp_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="20" width="100" height="30" uuid="43da16f5-6fbf-4e28-9dec-881dd4d1f271"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{NIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="20" width="100" height="30" uuid="c07052ab-9da5-4e9c-b309-ecc217a571ea"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Contact}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

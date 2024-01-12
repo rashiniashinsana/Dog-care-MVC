@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2023-12-01T19:55:56 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Inventory" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7711ab49-2717-4745-888a-642eb5fe1acb">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<queryString>
+		<![CDATA[SELECT * FROM inventory_details;]]>
+	</queryString>
+	<field name="Item_ID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Unit_Price" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Quantity" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="Item_ID">
+		<groupExpression><![CDATA[$F{Item_ID}]]></groupExpression>
+	</group>
+	<group name="Unit_Price">
+		<groupExpression><![CDATA[$F{Unit_Price}]]></groupExpression>
+	</group>
+	<group name="Quantity">
+		<groupExpression><![CDATA[$F{Quantity}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement x="167" y="7" width="230" height="30" uuid="41a647d4-2079-4054-a0ef-8b66dc285c0c"/>
+				<box padding="2" topPadding="0" leftPadding="2">
+					<topPen lineStyle="Dashed"/>
+					<leftPen lineStyle="Dashed"/>
+					<bottomPen lineStyle="Dashed"/>
+					<rightPen lineStyle="Dashed"/>
+				</box>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOG CARE CLINIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="40" width="118" height="40" uuid="bb1211ad-6a0d-46e1-b431-32eceeb9ba89"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[DCC,Mihiripenna,Thalpe,Unawatuna]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="63" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="19" width="100" height="17" uuid="e6394089-a33f-4d3e-b9aa-69abdffe1ca1"/>
+				<box padding="2" topPadding="0" leftPadding="2">
+					<topPen lineStyle="Dashed"/>
+					<leftPen lineStyle="Dashed"/>
+					<bottomPen lineStyle="Dashed"/>
+					<rightPen lineStyle="Dashed"/>
+				</box>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="0" y="40" width="100" height="19" uuid="015610e4-1e61-4bd0-9cab-2ccb1bee203e"/>
+				<box padding="2" topPadding="0" leftPadding="2">
+					<topPen lineStyle="Dashed"/>
+					<leftPen lineStyle="Dashed"/>
+					<bottomPen lineStyle="Dashed"/>
+					<rightPen lineStyle="Dashed"/>
+				</box>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="180" y="0" width="175" height="30" uuid="ec7f3e16-8e9d-472d-b103-6493a8795a58"/>
+				<textElement>
+					<font size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[INVENTORY REPORT]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="141" splitType="Stretch">
+			<staticText>
+				<reportElement x="84" y="38" width="100" height="22" uuid="a4dc8090-97fd-46d3-ac2a-876832164b02"/>
+				<text><![CDATA[Item_ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="234" y="37" width="100" height="23" uuid="f6724b76-45cf-4c77-881d-a196d50e69a2"/>
+				<text><![CDATA[Unit_Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="43" width="100" height="15" uuid="78f5634f-d128-4f43-8107-ca5f5f895b6a"/>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-19" y="10" width="591" height="1" uuid="2ab64118-9a6e-47f6-9ff4-36eb7bfc9ece">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="84" y="8" width="100" height="30" uuid="87849cbd-9332-4555-a80c-773e1c5d9b50"/>
+				<textFieldExpression><![CDATA[$F{Item_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="8" width="100" height="30" uuid="87db3c48-ecbb-4153-a48f-285a02a277be"/>
+				<textFieldExpression><![CDATA[$F{Unit_Price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="412" y="10" width="100" height="30" uuid="4fc9c230-887a-48ea-be5e-6324c0dcd925"/>
+				<textFieldExpression><![CDATA[$F{Quantity}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

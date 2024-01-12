@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2023-12-01T19:56:52 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Owner" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7fbee3c8-3c3b-4c7d-b406-b06bdef280b9">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<queryString>
+		<![CDATA[SELECT * FROM owner;]]>
+	</queryString>
+	<field name="O_ID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Owner_Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Contacts" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="O_ID">
+		<groupExpression><![CDATA[$F{O_ID}]]></groupExpression>
+	</group>
+	<group name="Owner_Name">
+		<groupExpression><![CDATA[$F{Owner_Name}]]></groupExpression>
+	</group>
+	<group name="Contacts">
+		<groupExpression><![CDATA[$F{Contacts}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement x="160" y="0" width="230" height="30" uuid="90f2e072-035f-45e1-9956-738414617c9e"/>
+				<box padding="2" topPadding="0" leftPadding="2">
+					<topPen lineStyle="Dashed"/>
+					<leftPen lineStyle="Dashed"/>
+					<bottomPen lineStyle="Dashed"/>
+					<rightPen lineStyle="Dashed"/>
+				</box>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOG CARE CLINIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="17" width="118" height="40" uuid="c0419609-4ced-4674-ac08-2bd5cf6d43d7"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[DCC,Mihiripenna,Thalpe,Unawatuna]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="96" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="0" width="100" height="17" uuid="2456e9a0-e777-4a30-84fd-67b27fcba87b"/>
+				<box padding="2" topPadding="0" leftPadding="2">
+					<topPen lineStyle="Dashed"/>
+					<leftPen lineStyle="Dashed"/>
+					<bottomPen lineStyle="Dashed"/>
+					<rightPen lineStyle="Dashed"/>
+				</box>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="0" y="25" width="100" height="19" uuid="96d59b8b-299b-4eb2-994b-b6554f3445e1"/>
+				<box padding="2" topPadding="0" leftPadding="2">
+					<topPen lineStyle="Dashed"/>
+					<leftPen lineStyle="Dashed"/>
+					<bottomPen lineStyle="Dashed"/>
+					<rightPen lineStyle="Dashed"/>
+				</box>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="216" y="11" width="136" height="30" uuid="938659a9-1259-4dd9-85cb-1219da383508"/>
+				<textElement>
+					<font size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[OWNER REPORT]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-18" y="74" width="591" height="1" uuid="598a9ab6-f8a5-41f4-b713-c59e8f8a2a39">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="245" y="28" width="100" height="30" uuid="bb5d333c-297a-4b47-9b64-7b45e13dcc3e"/>
+				<box padding="2" topPadding="0" leftPadding="2">
+					<topPen lineStyle="Dashed"/>
+					<leftPen lineStyle="Dashed"/>
+					<bottomPen lineStyle="Dashed"/>
+					<rightPen lineStyle="Dashed"/>
+				</box>
+				<text><![CDATA[Owner_Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="79" y="29" width="100" height="30" forecolor="#1C1C1B" uuid="b26b0ba7-6552-4816-a755-25be4c774dac"/>
+				<box padding="2" topPadding="0" leftPadding="2">
+					<topPen lineStyle="Dashed"/>
+					<leftPen lineStyle="Dashed"/>
+					<bottomPen lineStyle="Dashed"/>
+					<rightPen lineStyle="Dashed"/>
+				</box>
+				<text><![CDATA[O_ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="28" width="100" height="30" uuid="3f531d94-c0df-4b4e-8de4-57bb9e811d0d"/>
+				<box padding="2" topPadding="0" leftPadding="2">
+					<topPen lineStyle="Dashed"/>
+					<leftPen lineStyle="Dashed"/>
+					<bottomPen lineStyle="Dashed"/>
+					<rightPen lineStyle="Dashed"/>
+				</box>
+				<text><![CDATA[Contacts]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="240" y="20" width="100" height="30" uuid="1af637dc-4d3e-452f-9639-489a17af80eb"/>
+				<box padding="2" topPadding="0" leftPadding="2">
+					<topPen lineStyle="Dashed"/>
+					<leftPen lineStyle="Dashed"/>
+					<bottomPen lineStyle="Dashed"/>
+					<rightPen lineStyle="Dashed"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{Owner_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="79" y="20" width="100" height="30" uuid="02afc4d5-233e-4698-a3d1-2c298e5290b4"/>
+				<box padding="2" topPadding="0" leftPadding="2">
+					<topPen lineStyle="Dashed"/>
+					<leftPen lineStyle="Dashed"/>
+					<bottomPen lineStyle="Dashed"/>
+					<rightPen lineStyle="Dashed"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{O_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="413" y="20" width="100" height="30" uuid="f101b6e4-7fe8-4b33-8443-07daf2787dde"/>
+				<box padding="2" topPadding="0" leftPadding="2">
+					<topPen lineStyle="Dashed"/>
+					<leftPen lineStyle="Dashed"/>
+					<bottomPen lineStyle="Dashed"/>
+					<rightPen lineStyle="Dashed"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{Contacts}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="60" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="37" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="SignupPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: FCECB6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dogCareClinic.controller.CreateAccountFormController">
+   <children>
+      <ImageView fitHeight="233.0" fitWidth="308.0" layoutX="889.0" layoutY="87.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/SL-100420-36140-29.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="291.0" fitWidth="197.0" layoutX="587.0" layoutY="109.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/medicine%20(1).png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9c5c5" height="501.0" layoutX="881.0" layoutY="26.0" opacity="0.05" stroke="#615f5f" strokeType="OUTSIDE" strokeWidth="2.0" width="326.0" />
+      <Label layoutX="896.0" layoutY="44.0" prefHeight="58.0" prefWidth="296.0" text="Create Account">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textUserName" layoutX="896.0" layoutY="120.0" prefHeight="26.0" prefWidth="296.0" promptText="Enter Your Username" />
+      <TextField fx:id="txtUsername1" layoutX="896.0" layoutY="156.0" prefHeight="26.0" prefWidth="296.0" promptText="E mail" />
+      <Button defaultButton="true" layoutX="897.0" layoutY="284.0" mnemonicParsing="false" onAction="#btnSignOnAction" prefHeight="38.0" prefWidth="293.0" style="-fx-background-color: 8987FF;" styleClass="signupbtn" stylesheets="@../style/style.css" text="SIGN UP">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Line endX="-5.20001220703125" endY="427.4999694824219" layoutX="911.0" layoutY="-59.0" startX="272.4000244140625" startY="427.4999694824219" />
+      <Text layoutX="905.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already Registered?" />
+      <Text layoutX="904.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terms &amp; Conditions" wrappingWidth="107.73672485351562" />
+      <Text layoutX="1031.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Support" wrappingWidth="45.336700439453125" />
+      <Text layoutX="1098.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Care" wrappingWidth="82.93673706054688" />
+      <ImageView fitHeight="507.0" fitWidth="501.0" layoutX="124.0" layoutY="35.0" opacity="0.21" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/report.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="322.0" fitWidth="459.0" layoutX="210.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/North-Seattle-Veterinary-Clinic-Images-01-1.png" />
+         </image>
+      </ImageView>
+      <Text fill="#5e5e5e" layoutX="439.0" layoutY="645.0" strokeMiterLimit="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Help us to Help" wrappingWidth="307.8494873046875">
+         <font>
+            <Font name="Segoe Print Bold" size="36.0" />
+         </font>
+         <stroke>
+            <LinearGradient cycleMethod="REFLECT" endX="0.32575756853277027" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.34117648005485535" green="1.0" blue="0.9411764740943909" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.12226121127605438" green="0.5894736647605896" blue="0.5427524447441101" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Text>
+      <PasswordField fx:id="pwdPassword" layoutX="897.0" layoutY="202.0" prefHeight="26.0" prefWidth="294.0" promptText="Password" />
+      <PasswordField fx:id="txtUsername111" layoutX="897.0" layoutY="236.0" prefHeight="26.0" prefWidth="294.0" promptText="Confirm Password" />
+      <Hyperlink fx:id="txtLogin" layoutX="1012.0" layoutY="379.0" onAction="#txtLoginOnAction" text="Login" />
+      <ImageView fitHeight="155.0" fitWidth="279.0" layoutX="66.0" layoutY="445.0" opacity="0.22" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/medicine%20(2).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="employee" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;" styleClass="rec_pane" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dogCareClinic.controller.EmployeeFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#946c309c" height="730.0" layoutY="-6.0" stroke="WHITE" strokeType="INSIDE" width="168.0" />
+      <Pane layoutX="168.0" layoutY="1.0" prefHeight="48.0" prefWidth="1108.0" style="-fx-background-color: #f5f5f5; -fx-background-radius: 40;" />
+      <TableView fx:id="tblEmployee" layoutX="189.0" layoutY="350.0" prefHeight="365.0" prefWidth="1075.0">
+         <columns>
+            <TableColumn fx:id="colEmployeeID" prefWidth="136.00003051757812" text="Employee ID" />
+            <TableColumn fx:id="colEmployeeName" prefWidth="259.9999694824219" text="Employee Name" />
+            <TableColumn fx:id="colNIC" minWidth="7.20001220703125" prefWidth="202.4000244140625" text="NIC" />
+            <TableColumn fx:id="colSex" minWidth="7.20001220703125" prefWidth="111.99993896484375" text="Sex" />
+            <TableColumn fx:id="colContacts" minWidth="7.20001220703125" prefWidth="182.4000244140625" text="Contacts" />
+            <TableColumn fx:id="colJobRole" minWidth="7.20001220703125" prefWidth="183.199951171875" text="Job Role" />
+         </columns>
+      </TableView>
+      <DatePicker layoutX="1055.0" layoutY="53.0" prefHeight="26.0" prefWidth="194.0" />
+      <Text layoutX="195.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE EMPLOYEE" wrappingWidth="216.90783691406273">
+         <font>
+            <Font name="Marlett" size="18.0" />
+         </font>
+      </Text>
+      <Pane layoutX="197.0" layoutY="93.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="245.0" prefWidth="840.0" style="-fx-background-color: #eaf5f3; -fx-background-radius: 20;" styleClass="ReportPane" stylesheets="@../style/style.css">
+         <children>
+            <Text layoutX="72.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Name" wrappingWidth="105.75585937500003">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtEmployeeName" layoutX="71.0" layoutY="98.0" prefHeight="25.0" prefWidth="307.0" />
+            <Text layoutX="422.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sex" wrappingWidth="92.7999877929687">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtSex" layoutX="419.0" layoutY="39.0" prefHeight="25.0" prefWidth="264.0" />
+            <Text layoutX="75.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC" wrappingWidth="92.7999877929687">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtNIC" layoutX="72.0" layoutY="155.0" prefHeight="25.0" prefWidth="307.0" />
+            <Text layoutX="74.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID" wrappingWidth="92.7999877929687">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtEmployeeID" layoutX="72.0" layoutY="40.0" prefHeight="26.0" prefWidth="307.0" />
+            <JFXButton fx:id="btn" layoutX="712.0" layoutY="28.0" onAction="#btnAddOnAction" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #e0eae9;" styleClass="add_button" stylesheets="@../style/style.css" text="Add ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btn1" layoutX="711.0" layoutY="73.0" onAction="#btnUpdateOnAction" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #e0eae9;" styleClass="update_button" stylesheets="@../style/style.css" text="Update">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn11" layoutX="711.0" layoutY="118.0" onAction="#btnDeleteOnAction" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #e0eae9;" styleClass="add_button" stylesheets="@../style/style.css" text="Delete">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn111" layoutX="712.0" layoutY="165.0" onAction="#btnClearOnAction" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #e0eae9;" styleClass="clear_button" stylesheets="@../style/style.css" text="Clear">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="422.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contacts" wrappingWidth="92.7999877929687">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtContact" layoutX="419.0" layoutY="96.0" prefHeight="25.0" prefWidth="264.0" />
+            <Text layoutX="422.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Job Role" wrappingWidth="92.7999877929687">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtRole" layoutX="419.0" layoutY="155.0" prefHeight="25.0" prefWidth="264.0" />
+            <JFXButton alignment="CENTER" layoutX="75.0" layoutY="197.0" onAction="#btnSearchOnAction" prefHeight="31.0" prefWidth="82.0" style="-fx-border-radius: 50;" styleClass="search_button" stylesheets="@../style/style.css" text="Search" />
+         </children></Pane>
+      <ComboBox layoutX="1050.0" layoutY="4.0" prefHeight="40.0" prefWidth="217.0" promptText="Mr.Deshan Vithanage" style="-fx-background-radius: 25;" />
+      <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="1213.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/user%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="1052.0" layoutY="112.0">
+         <image>
+            <Image url="@../assets/24-hours.gif" />
+         </image>
+      </ImageView>
+      <Pane layoutY="-2.0" prefHeight="55.0" prefWidth="168.0" style="-fx-background-color: #cac0ae;">
+         <children>
+            <Text layoutX="52.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dog Care Clinic" wrappingWidth="105.755859375">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="40.0" fitWidth="31.0" layoutX="15.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/pets.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="171.0" layoutY="4.0" prefHeight="48.0" prefWidth="1108.0" style="-fx-background-color: #f5f5f5; -fx-background-radius: 40;" styleClass="search_pane" stylesheets="@../style/style.css" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="1.0" layoutY="53.0" opacity="0.66" stroke="#fff7e1" strokeType="INSIDE" width="168.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="2.0" layoutY="86.0" opacity="0.66" stroke="#fff7e1" strokeType="INSIDE" width="168.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="2.0" layoutY="119.0" opacity="0.66" stroke="#fff7e1" strokeType="INSIDE" width="168.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="2.0" layoutY="152.0" opacity="0.66" stroke="#fff7e1" strokeType="INSIDE" width="168.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="2.0" layoutY="185.0" opacity="0.66" stroke="#fff7e1" strokeType="INSIDE" width="168.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="2.0" layoutY="218.0" opacity="0.66" stroke="#fff7e1" strokeType="INSIDE" width="168.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="2.0" layoutY="251.0" opacity="0.66" stroke="#fff7e1" strokeType="INSIDE" width="168.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="2.0" layoutY="284.0" opacity="0.66" stroke="#fff7e1" strokeType="INSIDE" width="168.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="34.0" layoutX="2.0" layoutY="317.0" opacity="0.66" stroke="#fff7e1" strokeType="INSIDE" styleClass="community_button" width="168.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="34.0" layoutX="1.0" layoutY="349.0" opacity="0.66" stroke="#fff7e1" strokeType="INSIDE" styleClass="community_button" width="168.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="337.0" layoutX="2.0" layoutY="381.0" opacity="0.66" stroke="#fff7e1" strokeType="INSIDE" styleClass="community_button" width="168.0" />
+      <ImageView fitHeight="26.0" fitWidth="22.0" layoutX="15.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/layout%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="22.0" layoutX="14.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/stethoscope%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="22.0" layoutX="13.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-dog-90%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="22.0" layoutX="16.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/user-md.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="22.0" layoutX="15.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/house-user%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="22.0" layoutX="14.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/credit-card%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="22.0" layoutX="16.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/inventory-alt%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="22.0" layoutX="14.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/treatment%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="22.0" layoutX="16.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/file-medical-alt.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="22.0" layoutX="17.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/diagram-project%201.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="1.0" layoutY="52.0" onAction="#btnDashboardOnAction" prefHeight="35.0" prefWidth="168.0" style="-fx-background-radius: 30;" styleClass="dashboard_button" stylesheets="@../style/style.css" text="Dashboard" />
+      <JFXButton layoutX="1.0" layoutY="88.0" onAction="#btnAppointmentOnAction" prefHeight="30.0" prefWidth="168.0" style="-fx-border-radius: 30;" styleClass="appointment_button" stylesheets="@../style/style.css" text="Appointment" />
+      <JFXButton layoutX="1.0" layoutY="120.0" onAction="#btnDogOnAction" prefHeight="31.0" prefWidth="168.0" styleClass="dog_button" stylesheets="@../style/style.css" text="Dog" />
+      <JFXButton layoutX="1.0" layoutY="155.0" onAction="#btnEmployeeOnAction" prefHeight="31.0" prefWidth="168.0" styleClass="employee_button" stylesheets="@../style/style.css" text="Employee" />
+      <JFXButton layoutX="1.0" layoutY="189.0" onAction="#btnOwnerOnAction" prefHeight="31.0" prefWidth="168.0" styleClass="owner_button" stylesheets="@../style/style.css" text="Owner" />
+      <JFXButton layoutX="1.0" layoutY="220.0" onAction="#btnPaymentOnAction" prefHeight="31.0" prefWidth="168.0" styleClass="payment_button" stylesheets="@../style/style.css" text="Payment" />
+      <JFXButton layoutX="1.0" layoutY="253.0" onAction="#btnInventoryOnAction" prefHeight="31.0" prefWidth="168.0" styleClass="inventory_button" stylesheets="@../style/style.css" text="Inventory" />
+      <JFXButton layoutX="1.0" layoutY="287.0" onAction="#btnRecordOnAction" prefHeight="31.0" prefWidth="168.0" styleClass="record_button" stylesheets="@../style/style.css" text="Record" />
+      <JFXButton fx:id="btnReport" layoutX="-2.0" layoutY="317.0" onAction="#btnReportOnAction" prefHeight="34.0" prefWidth="168.0" text="Report" />
+      <JFXButton layoutX="2.0" layoutY="351.0" onAction="#btnCommunityOnAction" prefHeight="31.0" prefWidth="168.0" styleClass="community_button" stylesheets="@../style/style.css" text="       Community Project" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffe7ba" height="167.0" layoutX="5.0" layoutY="546.0" stroke="#eda63b" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="159.0" />
+      <Ellipse fill="#8cffff" layoutX="50.0" layoutY="591.0" opacity="0.44" radiusX="41.0" radiusY="39.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Ellipse fill="#c4a7e8" layoutX="160.0" layoutY="685.0" radiusX="18.0" radiusY="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <JFXButton layoutX="139.0" layoutY="668.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#btnBackOnAction" prefHeight="34.0" prefWidth="31.0" styleClass="back_button" stylesheets="@../style/style.css" text="  ">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" styleClass="back_button">
+               <image>
+                  <Image url="@../assets/icons8-arrow-90%202.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Ellipse fill="#41ffe3" layoutX="120.0" layoutY="608.0" opacity="0.44" radiusX="28.0" radiusY="24.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="153.0" fitWidth="123.0" layoutX="23.0" layoutY="584.0" opacity="0.84" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/veterinarian.png" />
+         </image>
+      </ImageView>
+      <ComboBox layoutX="1055.0" layoutY="8.0" prefHeight="40.0" prefWidth="217.0" promptText="Mr.Deshan Vithanage" style="-fx-background-radius: 25;" />
+      <ImageView fitHeight="40.0" fitWidth="30.0" layoutX="1218.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/user%20(2).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

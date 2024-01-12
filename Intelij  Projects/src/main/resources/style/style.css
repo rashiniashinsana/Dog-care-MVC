@@ -1,0 +1,134 @@
+.rec_pane{
+    -fx-background-color:  #ecf0f1;
+    -fx-background-radius: 10;
+
+}
+.dashboard_pane{
+    -fx-border-radius: 10;
+    -fx-border-color: #7f8c8d;
+    -fx-background-radius: 10;
+    -fx-background-color:white ;
+}
+
+.graph_pane{
+    -fx-background-radius:15;
+    -fx-border-color:#ecf0f1 ;
+    -fx-border-radius: 10;
+    -fx-background-color:white;
+}
+.search_pane{
+    -fx-background-radius:40;
+    -fx-background-color:  #f5f5f5;
+}
+
+.adddog_pane{
+    -fx-background-radius: 25;
+    -fx-background-color: #aaa69d;
+}
+.dashboard_button{
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+}
+.appointment_button{
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+}
+
+.dog_button{
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+}
+
+.employee_button{
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+}
+
+.owner_button{
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+}
+
+.payment_button{
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+}
+
+.inventory_button{
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+}
+
+.record_button{
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+}
+
+.community_button{
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+}
+
+.add_button{
+    -fx-background-radius:30;
+    -fx-cursor: hand;
+    -fx-text-fill: #000000;
+}
+.update_button{
+    -fx-background-radius:30;
+    -fx-cursor: hand;
+    -fx-text-fill: #000000;
+}
+.delete_button{
+    -fx-background-radius:30;
+    -fx-cursor: hand;
+    -fx-text-fill: #000000;
+}
+
+.clear_button{
+    -fx-background-radius:30;
+    -fx-cursor: hand;
+    -fx-text-fill: #000000;
+}
+
+.search_button{
+    -fx-cursor: hand;
+    -fx-background-radius:40;
+    -fx-background-color:#C0CBCF;
+}
+
+.back_button{
+    -fx-cursor:hand;
+    -fx-background-radius: 50;
+}
+
+.treatment_button{
+    -fx-background-color: #ecf0f1;
+    -fx-background-radius: 50;
+    -fx-cursor: hand;
+}
+.supplier_button{
+    -fx-cursor: hand;
+    -fx-background-radius: 50;
+    -fx-background-color: #e0eae9;
+}
+.ReportPane{
+    -fx-background-color:  #eaf5f3 ;
+    -fx-background-radius: 20;
+    -fx-fill:   rgba(224,233,244,1);
+
+    -fx-effect: dropshadow(gaussian, rgb(158, 166, 176), 15, 0, 0, 0);
+}
+.ReportDetails{
+    -fx-background-color:  #f5f5f5;
+    -fx-background-radius: 20;
+
+    -fx-effect: dropshadow(gaussian, rgb(5, 160, 179), 15, 0, 0, 0);
+}
+.Login_Pane{
+    -fx-background-color:  transparent;
+    -fx-background-radius: 20;
+    -fx-fill:   rgba(224,233,244,1);
+
+    -fx-effect: dropshadow(gaussian, rgb(158, 166, 176), 15, 0, 0, 0);
+}

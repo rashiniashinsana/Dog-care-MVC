@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="supplierPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dogCareClinic.controller.SupplierFormController">
+   <children>
+      <Pane layoutX="32.0" layoutY="44.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="895.0" style="-fx-background-color: #eaf5f3; -fx-background-radius: 20;" styleClass="ReportPane" stylesheets="@../style/style.css">
+         <children>
+            <JFXButton alignment="CENTER" layoutX="341.0" layoutY="255.0" onAction="#btnSearchOnAction" prefHeight="31.0" prefWidth="82.0" style="-fx-border-radius: 50;" styleClass="search_button" stylesheets="@../style/style.css" text="Search" />
+         </children></Pane>
+      <Text layoutX="14.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE SUPPLIER" wrappingWidth="216.90783691406273">
+         <font>
+            <Font name="Marlett" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="118.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier ID" wrappingWidth="92.7999877929687">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtSupplierID" layoutX="117.0" layoutY="106.0" prefHeight="26.0" prefWidth="217.0" />
+      <Text layoutX="118.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="92.7999877929687">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtContact" layoutX="117.0" layoutY="232.0" prefHeight="26.0" prefWidth="217.0" />
+      <Text layoutX="118.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contacts" wrappingWidth="92.7999877929687">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtSupplierment" layoutX="118.0" layoutY="302.0" prefHeight="26.0" prefWidth="218.0" />
+      <Text layoutX="117.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Name" wrappingWidth="92.7999877929687">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtSupplierName" layoutX="117.0" layoutY="171.0" prefHeight="26.0" prefWidth="217.0" />
+      <Text layoutX="119.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplierment" wrappingWidth="92.7999877929687">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btn" layoutX="783.0" layoutY="98.0" onAction="#btnAddOnAction" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #e0eae9;" styleClass="add_button" stylesheets="@../style/style.css" text="Add ">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btn1" layoutX="783.0" layoutY="163.0" onAction="#btnUpdateOnAction" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #e0eae9;" styleClass="update_button" stylesheets="@../style/style.css" text="Update">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn11" layoutX="783.0" layoutY="224.0" onAction="#btnDeleteOnAction" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #e0eae9;" styleClass="add_button" stylesheets="@../style/style.css" text="Delete">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn111" layoutX="784.0" layoutY="290.0" onAction="#btnClearOnAction" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #e0eae9;" styleClass="clear_button" stylesheets="@../style/style.css" text="Clear">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblSupplier" layoutX="14.0" layoutY="381.0" prefHeight="330.0" prefWidth="1250.0">
+        <columns>
+          <TableColumn fx:id="colSupplierID" prefWidth="153.60000324249268" text="Supplier ID" />
+          <TableColumn fx:id="colSupplierName" minWidth="6.4000244140625" prefWidth="380.8000030517578" text="Supplier Name" />
+            <TableColumn fx:id="colContacts" minWidth="6.4000244140625" prefWidth="239.20001220703125" text="Contacts" />
+            <TableColumn fx:id="colSupplierment" minWidth="6.4000244140625" prefWidth="479.20001220703125" text="Supplierment" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="345.0" fitWidth="384.0" layoutX="933.0" layoutY="20.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/donate.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
